@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>belajar bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+
+                  <a class="dropdown-item" href="#">Something else here 2</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row mt-2">
+        <h5>tambah karyawan</h5>
+        <form action="">
+          <div class="mb-3">
+            <label for="nik">nik</label><br />
+            <input type="text" id="nik" name="nik" size="10" maxlength="10"
+            required placeholder="misal: 123"
+          </div>
+          <div class="mb-3">
+            <label for="nama">nama</label><br />
+            <input type="text" id="nama" name="nama" required
+            placeholder="misal: fulan"
+          </div>
+          <div class="mb-3">
+            <label for="tanggal_mulai">tanggal mulai</label><br />
+            <input type="date" id="tanggal_mulai" name="tanggal_mulai" required
+            min="2022-01-11"
+          </div>
+          <div class="mb-3">
+            <label for="gaji_pokok">gaji pokok</label><br />
+            <input type="number" id="gaji_pokok" name="gaji_pokok" required
+            min="1000000" step="1000"
+          </div>
+
+          <label for="">status karyawan</label><br />
+          <input type="radio" id="tetap" name="status_karyawan" value="tetap" />
+          <label for="tetap">tetap</label><br />
+          <input
+            type="radio"
+            id="kontrak"
+            name="status_karyawan"
+            value="kontrak"
+          />
+          <label for="kontrak">kontrak</label><br />
+          <input
+            type="radio"
+            id="magang"
+            name="status_karyawan"
+            value="magang"
+          />
+          <label for="magang">magang</label><br />
+          <input
+            type="submit"
+            name="btn_submit"
+            id="btn_submit"
+            value="submit"
+          />
+          <input type="reset" name="btn_reset" id="btn_reset" value="reset" />
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

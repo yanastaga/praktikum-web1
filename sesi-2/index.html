@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        color: brown;
+        background-color: #eee;
+      }
+
+      h1,
+      h2 {
+        color: black;
+        text-align: center;
+      }
+
+      .teks-crimson {
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: crimson;
+      }
+
+      #teks-aqua {
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: aqua;
+      }
+
+      div p {
+        color: darkred;
+      }
+
+      div > div > p {
+        font-weight: bold;
+      }
+
+      .subbagian {
+        font-size: 30px;
+      }
+
+      .subbagian.header {
+        color: blueviolet;
+        font-weight: bold;
+      }
+
+      .subbagian#teks {
+        color: brown;
+        font-weight: bold;
+      }
+
+      p:hover {
+        background-color: #b2ffff;
+      }
+
+      * {
+        color: blue;
+        border: 2px solid rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>praktikum web 1</h1>
+    <h2>sesi 2</h2>
+    <hr />
+    <p class="teks-crimson">
+      praktik pemrograman web 1 sesi 2 akan membahas tentang penggunaan CSS
+    </p>
+    <p id="teks-aqua">
+      css atau cascading style sheets adalah sebuah bahasa yang digunakan untuk
+      mengatur tampilan suatu tampilan halaman web
+    </p>
+
+    <div>
+      <p>ini adalah paragraf pertama</p>
+      <div>
+        <p>ini adalah paragraf kedua</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="subbagian header">bagian header</div>
+      <p class="subbagian" id="teks">ini adalah paragraf</p>
+    </div>
+  </body>
+</html>
