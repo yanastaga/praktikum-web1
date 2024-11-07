@@ -93,30 +93,55 @@
             min="1000000" step="1000"
           </div>
 
-          <label for="">status karyawan</label><br />
-          <input type="radio" id="tetap" name="status_karyawan" value="tetap" />
-          <label for="tetap">tetap</label><br />
-          <input
-            type="radio"
-            id="kontrak"
-            name="status_karyawan"
-            value="kontrak"
-          />
-          <label for="kontrak">kontrak</label><br />
-          <input
-            type="radio"
-            id="magang"
-            name="status_karyawan"
-            value="magang"
-          />
-          <label for="magang">magang</label><br />
-          <input
-            type="submit"
-            name="btn_submit"
-            id="btn_submit"
-            value="submit"
-          />
-          <input type="reset" name="btn_reset" id="btn_reset" value="reset" />
+          <div class="mb-3">
+            <label for="">status karyawan</label><br />
+            <div class="form-check">
+              <input
+                type="radio"
+                id="tetap"
+                name="status_karyawan"
+                value="tetap"
+              />
+              <label for="tetap">tetap</label><br />
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                id="kontrak"
+                name="status_karyawan"
+                value="kontrak"
+              />
+              <label for="kontrak">kontrak</label><br />
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                id="magang"
+                name="status_karyawan"
+                value="magang"
+              />
+              <label for="magang">magang</label><br />
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-success"
+              name="btn_submit"
+              id="btn_submit"
+              value="submit"
+            >
+              <i class="fa fa-save"></i> submit
+            </button>
+            <button
+              type="reset"
+              class="btn btn-primary"
+              name="btn_reset"
+              id="btn_reset"
+              value="reset"
+            >
+              <i class="fa fa-arrows-rolate"></i> reset
+            </button>
+          </div>
         </form>
       </div>
     </div>
